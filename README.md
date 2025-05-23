@@ -30,3 +30,7 @@ Tools like ShadCN and Tailwind are fantastic when you're trying to rapid prototy
 ## Conclusion
 
 I had a lot of fun with this project and I really wish I could have done some more, but I kept a hard time limit of two hours.
+
+## Running the app
+
+`npm run dev`
