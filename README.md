@@ -1,6 +1,6 @@
 # Brandobook
 
-I used a book/reading theme for this social media application.
+I used a book/reading theme for this social media application. People usually call me "Brando", hence **Brandobook**.
 
 I didn't use any AI tools and I kept almost the entire thing within the two hour limit (except this README). I did spend some time before actually coding working on the idea, colors, and very basic napkin wireframing. I hope that's okay. It wasn't more than 30 minutes or so.
 
