@@ -29,11 +29,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="block sticky top-0 z-30 bg-white dark:bg-slate-800 border-b dark:border-slate-700 p-4">
-          <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-to-br to-leather-600 rounded-full flex items-center justify-center">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-gradient-to-br from-book-600 to-leather-600 rounded-full flex items-center justify-center">
               <BookOpen className="text-white" size={16} />
             </div>
-            <span className="text-lg font-bold">Brandobook</span>
+            <span className="text-lg text-book-700 font-bold">Brandobook</span>
           </div>
         </header>
         {children}
