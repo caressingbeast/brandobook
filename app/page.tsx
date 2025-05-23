@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-book-50">
       <div className="p-4 p-6 max-w-2xl mx-auto">
         <div className="space-y-4 space-y-6">
           <Suspense fallback={<div />}>
@@ -21,7 +21,7 @@ async function Feed() {
 
   if (posts.length === 0) {
     return (
-      <div className="text-center p-6 lg:p-8 bg-white dark:bg-slate-800 rounded-xl border border-book-200 dark:border-slate-700">
+      <div className="text-center p-6 lg:p-8 bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700">
         <p className="text-gray-500 dark:text-gray-400">
           No posts to display. Start sharing your reading journey!
         </p>

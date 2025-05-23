@@ -47,7 +47,7 @@ export default async function ProfilePage({
   }
 
   return (
-    <div className="mt-20 text-center px-4">
+    <div className="min-h-screen bg-book-50 pt-20 text-center px-4">
       <div className="mb-4 flex justify-center">
         <Avatar
           className="w-32 h-32 border-4 border-white dark:border-[#211e1b] rounded-full"
