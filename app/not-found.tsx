@@ -17,7 +17,7 @@ export default function NotFound() {
       </p>
 
       <Link href="/">
-        <Button className="bg-book-600 hover:bg-book-700 text-white">Return to Chapters</Button>
+        <Button className="bg-book-600 hover:bg-book-700 text-white">Return to Brandobook</Button>
       </Link>
     </div>
   );
