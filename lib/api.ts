@@ -37,3 +37,9 @@ export async function getUserPosts(username: string): Promise<Post[]> {
   // For now, we'll return posts by this user
   return posts.filter((post) => post.author.username === username);
 }
+
+// Get a single post by ID
+export async function getPostById(id: number): Promise<Post | null> {
+  const post = posts.find((post) => post.id === id);
+  return post || null;
+}

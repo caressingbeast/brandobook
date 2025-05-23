@@ -12,6 +12,7 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/components/ui/avatar';
+import { notFound } from 'next/navigation';
 
 // Generate metadata for the page
 export async function generateMetadata({
@@ -43,11 +44,11 @@ export default async function ProfilePage({
   const user = await getUserProfile(username);
 
   if (!user) {
-    return <div>Not Found</div>;
+    return notFound();
   }
 
   return (
-    <div className="min-h-screen bg-book-50 pt-20 text-center px-4">
+    <main className="min-h-screen bg-book-50 pt-20 text-center px-4">
       <div className="mb-4 flex justify-center">
         <Avatar
           className="w-32 h-32 border-4 border-white dark:border-[#211e1b] rounded-full"
@@ -188,7 +189,7 @@ export default async function ProfilePage({
           </TabsContent>
         </Tabs>
       </div>
-    </div>
+    </main>
   );
 }
 
