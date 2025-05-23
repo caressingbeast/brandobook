@@ -8,6 +8,8 @@ Well, "didn't use any AI tools" isn't entirely accurate. I did use ChatGPT to co
 
 Some things weren't exactly in scope (photos, likes, comments, etc.), but as this is a social media application, I felt those things were implied.
 
+Tools like ShadCN and Tailwind are fantastic when you're trying to rapid prototype like this.
+
 ## Some things I would have done if I had more time
 
 * Tests with Vitest and RTL
