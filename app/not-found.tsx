@@ -1,7 +1,7 @@
-import { BookOpen } from "lucide-react";
-import Link from "next/link";
+import { BookOpen } from 'lucide-react';
+import Link from 'next/link';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 export default function NotFound() {
   return (
@@ -10,14 +10,21 @@ export default function NotFound() {
         <BookOpen className="text-white" size={32} />
       </div>
 
-      <h1 className="text-4xl font-bold text-book-800 dark:text-book-200 mb-2">404</h1>
-      <h2 className="text-2xl font-semibold text-book-700 dark:text-book-300 mb-4">Page Not Found</h2>
+      <h1 className="text-4xl font-bold text-book-800 dark:text-book-200 mb-2">
+        404
+      </h1>
+      <h2 className="text-2xl font-semibold text-book-700 dark:text-book-300 mb-4">
+        Page Not Found
+      </h2>
       <p className="text-book-600 dark:text-book-400 mb-8 text-center max-w-md">
-        Looks like this page got lost in the library. Let's get you back to your reading community.
+        Looks like this page got lost in the library. Let's get you back to your
+        reading community.
       </p>
 
       <Link href="/">
-        <Button className="bg-book-600 hover:bg-book-700 text-white">Return to Brandobook</Button>
+        <Button className="bg-book-600 hover:bg-book-700 text-white">
+          Return to Brandobook
+        </Button>
       </Link>
     </div>
   );

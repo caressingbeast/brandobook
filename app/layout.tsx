@@ -37,13 +37,18 @@ export default function RootLayout({
                 <BookOpen className="text-white" size={16} />
               </div>
               <Link href="/">
-                <span className="text-lg text-book-700 font-bold">Brandobook</span>
+                <span className="text-lg text-book-700 font-bold">
+                  Brandobook
+                </span>
               </Link>
             </div>
             <div>
               <Link href="/profile/emmareads">
                 <Avatar>
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Emma Bookworm" />
+                  <AvatarImage
+                    src="/placeholder.svg?height=40&width=40"
+                    alt="Emma Bookworm"
+                  />
                   <AvatarFallback>EB</AvatarFallback>
                 </Avatar>
               </Link>

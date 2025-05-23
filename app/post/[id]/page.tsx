@@ -1,10 +1,15 @@
-import { Avatar } from "@/components/Avatar";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { getPostById } from "@/lib/api";
-import { formatDate } from "@/lib/utils";
-import { Heart } from "lucide-react";
-import Link from "next/link";
-import { notFound } from "next/navigation";
+import { Avatar } from '@/components/Avatar';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from '@/components/ui/card';
+import { getPostById } from '@/lib/api';
+import { formatDate } from '@/lib/utils';
+import { Heart } from 'lucide-react';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 export default async function PostPage({ params }: { params: { id: string } }) {
   const { id } = await params;
@@ -40,7 +45,11 @@ export default async function PostPage({ params }: { params: { id: string } }) {
           </div>
           {post.image && (
             <div className="rounded-xl overflow-hidden">
-              <img src={post.image || "/placeholder.svg"} alt="Post content" className="w-full h-auto" />
+              <img
+                src={post.image || '/placeholder.svg'}
+                alt="Post content"
+                className="w-full h-auto"
+              />
             </div>
           )}
         </CardContent>
@@ -50,9 +59,13 @@ export default async function PostPage({ params }: { params: { id: string } }) {
               <div className="bg-rose-500 text-white rounded-full p-1">
                 <Heart className="h-3 w-3" />
               </div>
-              <span className="text-sm text-gray-500 dark:text-gray-400">{post.likes}</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">
+                {post.likes}
+              </span>
             </div>
-            <div className="text-sm text-gray-500 dark:text-gray-400">{post.comments.length} comments</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              {post.comments.length} comments
+            </div>
           </div>
         </CardFooter>
       </Card>
