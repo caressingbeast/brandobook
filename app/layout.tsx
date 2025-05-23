@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { BookOpen } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,11 +31,23 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="block sticky top-0 z-30 bg-white dark:bg-slate-800 border-b dark:border-slate-700 p-4">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-book-600 to-leather-600 rounded-full flex items-center justify-center">
-              <BookOpen className="text-white" size={16} />
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-book-600 to-leather-600 rounded-full flex items-center justify-center">
+                <BookOpen className="text-white" size={16} />
+              </div>
+              <Link href="/">
+                <span className="text-lg text-book-700 font-bold">Brandobook</span>
+              </Link>
             </div>
-            <span className="text-lg text-book-700 font-bold">Brandobook</span>
+            <div>
+              <Link href="/profile/emmareads">
+                <Avatar>
+                  <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Emma Bookworm" />
+                  <AvatarFallback>EB</AvatarFallback>
+                </Avatar>
+              </Link>
+            </div>
           </div>
         </header>
         {children}
