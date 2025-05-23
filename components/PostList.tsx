@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar } from '@/components/Avatar';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { formatDate } from '@/lib/utils';
 
@@ -15,16 +15,10 @@ export function PostList({ posts }: { posts: Post[] }) {
         >
           <CardHeader className="p-3 lg:p-4">
             <div className="flex items-center gap-3">
-              <Avatar className="h-10 w-10 lg:h-12 lg:w-12">
-                <AvatarImage
-                  src={post.author.avatar || '/placeholder.svg'}
-                  alt={`${post.author.firstName} ${post.author.lastName}`}
-                />
-                <AvatarFallback>
-                  {post.author.firstName.substring(0, 1)}
-                  {post.author.lastName.substring(0, 1)}
-                </AvatarFallback>
-              </Avatar>
+              <Avatar
+                className="h-10 w-10 lg:h-12 lg:w-12"
+                user={post.author}
+              />
               <div className="flex-1 min-w-0">
                 <Link
                   href={`/profile/${post.author.username}`}

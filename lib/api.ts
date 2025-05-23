@@ -24,3 +24,16 @@ export async function getUserProfile(username: string): Promise<User | null> {
 
   return user;
 }
+
+// Get user posts by username
+export async function getUserPosts(username: string): Promise<Post[]> {
+  const user = await getUserByUsername(username);
+
+  if (!user) {
+    return [];
+  }
+
+  // In a real app, this would query a database
+  // For now, we'll return posts by this user
+  return posts.filter((post) => post.author.username === username);
+}
