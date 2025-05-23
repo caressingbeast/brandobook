@@ -10,7 +10,7 @@ export type Comment = {
   id: number;
   author: User;
   content: string;
-  timestamp: string;
+  createdAt: string;
   likes: number;
 };
 
@@ -19,7 +19,7 @@ export type Post = {
   author: User;
   content: string;
   image?: string;
-  timestamp: string;
+  createdAt: string;
   likes: number;
   comments: Comment[];
 };

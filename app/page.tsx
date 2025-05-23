@@ -6,9 +6,11 @@ export default function HomePage() {
   return (
     <main className='lg:ml-64 min-h-screen'>
       <div className='p-4 lg:p-6 max-w-2xl mx-auto'>
-        <Suspense fallback={<div />}>
-          <Feed />
-        </Suspense>
+        <div className="space-y-4 lg:space-y-6">
+          <Suspense fallback={<div />}>
+            <Feed />
+          </Suspense>
+        </div>
       </div>
     </main>
   );

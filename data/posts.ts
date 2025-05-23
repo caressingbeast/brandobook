@@ -53,7 +53,7 @@ const comments: Comment[] = [
     author: users[0],
     content:
       'I absolutely loved this book! The character development was incredible. Have you read any other works by this author?',
-    timestamp: getPastDate(0, 1, 0), // 1 hour ago
+    createdAt: getPastDate(0, 1, 0), // 1 hour ago
     likes: 8,
   },
   {
@@ -61,7 +61,7 @@ const comments: Comment[] = [
     author: users[3],
     content:
       'Adding this to my TBR pile immediately! Your review convinced me. 📚',
-    timestamp: getPastDate(0, 0, 45), // 45 minutes ago
+    createdAt: getPastDate(0, 0, 45), // 45 minutes ago
     likes: 5,
   },
   {
@@ -69,7 +69,7 @@ const comments: Comment[] = [
     author: users[2],
     content:
       "I'm so jealous of your cozy reading nook! The lighting looks perfect for those long reading sessions.",
-    timestamp: getPastDate(0, 3, 0), // 3 hours ago
+    createdAt: getPastDate(0, 3, 0), // 3 hours ago
     likes: 12,
   },
   {
@@ -77,7 +77,7 @@ const comments: Comment[] = [
     author: users[0],
     content:
       'That bookstore is one of my favorites! Did you find anything good in their rare books section?',
-    timestamp: getPastDate(0, 2, 0), // 2 hours ago
+    createdAt: getPastDate(0, 2, 0), // 2 hours ago
     likes: 3,
   },
   {
@@ -85,7 +85,7 @@ const comments: Comment[] = [
     author: users[1],
     content:
       'Congratulations on finishing your reading challenge! What was your favorite book from the list?',
-    timestamp: getPastDate(0, 6, 0), // 6 hours ago
+    createdAt: getPastDate(0, 6, 0), // 6 hours ago
     likes: 15,
   },
 ];
@@ -98,7 +98,7 @@ export const posts: Post[] = [
     content:
       "Just finished reading 'The Seven Husbands of Evelyn Hugo' and I'm absolutely speechless! 📖✨\n\nThis book had everything - glamour, secrets, love, and the most incredible character development I've read in years. Taylor Jenkins Reid has such a gift for storytelling. The way she weaves together past and present is masterful.\n\nWithout spoiling anything, I'll just say that the ending left me in tears (happy tears!). If you're looking for your next read, I cannot recommend this enough.\n\n⭐⭐⭐⭐⭐ 5/5 stars\n\n#BookReview #TaylorJenkinsReid #ContemporaryFiction #MustRead",
     image: '/placeholder.svg?height=400&width=600&text=Book+Cover',
-    timestamp: getPastDate(0, 2, 0), // 2 hours ago
+    createdAt: getPastDate(0, 2, 0), // 2 hours ago
     likes: 42,
     comments: [comments[0], comments[1]],
   },
@@ -108,7 +108,7 @@ export const posts: Post[] = [
     content:
       "Finally set up my dream reading nook! 🏠📚\n\nAfter months of planning, I've created the perfect cozy corner for my reading adventures. The natural light from the window is perfect for afternoon reading sessions, and the built-in bookshelves hold all my current favorites.\n\nThere's something magical about having a dedicated space just for books. Already planning my next reading session here with a cup of tea and the new mystery novel I picked up yesterday.\n\nWhat does your reading space look like? I'd love to see your setups!\n\n#ReadingNook #BookLovers #CozyReading #HomeLibrary",
     image: '/placeholder.svg?height=400&width=600&text=Reading+Nook',
-    timestamp: getPastDate(0, 5, 0), // 5 hours ago
+    createdAt: getPastDate(0, 5, 0), // 5 hours ago
     likes: 87,
     comments: [comments[2], comments[3]],
   },
@@ -117,7 +117,7 @@ export const posts: Post[] = [
     author: users[3],
     content:
       "Completed my 2024 reading challenge! 🎉📚\n\nGoal: 52 books ✅\nActual: 58 books!\n\nThis year I explored so many new genres and discovered some incredible authors. From sci-fi epics to cozy mysteries, historical fiction to poetry collections - each book taught me something new.\n\nSome standout reads:\n📖 'Klara and the Sun' by Kazuo Ishiguro\n📖 'The Midnight Library' by Matt Haig\n📖 'Circe' by Madeline Miller\n📖 'Educated' by Tara Westover\n\nAlready planning next year's reading goals. Thinking of focusing more on diverse voices and maybe tackling some classics I've been putting off.\n\n#ReadingChallenge2024 #BookGoals #ReadingLife #Bookstagram",
-    timestamp: getPastDate(0, 8, 0), // 8 hours ago
+    createdAt: getPastDate(0, 8, 0), // 8 hours ago
     likes: 124,
     comments: [comments[4]],
   },

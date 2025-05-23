@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { formatDate } from '@/lib/utils';
 
 import { Post } from '@/types';
 import Link from 'next/link';
@@ -32,7 +33,7 @@ export function PostList({ posts }: { posts: Post[] }) {
                   {post.author.firstName} {post.author.lastName}
                 </Link>
                 <p className='text-sm text-gray-500 dark:text-gray-400'>
-                  {new Date(post.timestamp).toLocaleString()}
+                  {formatDate(post.createdAt)}
                 </p>
               </div>
             </div>
