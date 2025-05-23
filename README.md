@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brandobook
 
-## Getting Started
+I used a book/reading theme for this social media application.
 
-First, run the development server:
+I didn't use any AI tools and I kept almost the entire thing within the two hour limit (except this README). I did spend some time before actually coding working on the idea, colors, and very basic napkin wireframing. I hope that's okay. It wasn't more than 30 minutes or so.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Well, "didn't use any AI tools" isn't entirely accurate. I did use ChatGPT to come up with the fake users and fake posts. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Some things weren't exactly in scope (photos, likes, comments, etc.), but as this is a social media application, I felt those things were implied.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Some things I would have done if I had more time
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Tests with Vitest and RTL
+* GitHub Actions running againt open PRs (Prettier formatting, linting, type checking, tests, etc.)
+* A form to add a new post
+* Incrementing/decrementing likes
+* A form to add comments
+* Displaying comments on a post
+* Making it look better on larger screens (I went with a mobile-first approach that also looks decent enough on a large screen)
 
-## Learn More
+## Conclusion
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I had a lot of fun with this project and I really wish I could have done some more, but I kept a hard time limit of two hours.
