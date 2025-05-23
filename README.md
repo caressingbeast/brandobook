@@ -15,6 +15,7 @@ Tools like ShadCN and Tailwind are fantastic when you're trying to rapid prototy
 * I tried to make sure most components were server rendered
 * Had I been able to incorporate some of the things in my list below, I would've used some client components and server actions (liking, posting, etc.)
 * As stated above, I made the choice to incorporate ShadCN and Tailwind to speed up development and design
+* I didn't run into any challenges, other than lack of time. This is the kind of stuff I have done daily for the past four years (eight if you only include straight React development), so I felt right at home.
 
 ## Some things I would have done if I had more time
 
