@@ -7,16 +7,16 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: string | Date) {
-  const dateObj = typeof date === "string" ? new Date(date) : date;
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
 
   if (isNaN(dateObj.getTime())) {
-    return "Invalid date";
+    return 'Invalid date';
   }
 
   try {
-    return formatDistanceToNow(dateObj, { addSuffix: true })
+    return formatDistanceToNow(dateObj, { addSuffix: true });
   } catch (error) {
-    console.error("Error formatting relative time:", error)
-    return "Invalid date";
+    console.error('Error formatting relative time:', error);
+    return 'Invalid date';
   }
 }

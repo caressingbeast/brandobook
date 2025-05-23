@@ -1,9 +1,16 @@
 export type User = {
   id: number;
-  firstName: string;
-  lastName: string;
-  username: string;
   avatar: string;
+  bio: string;
+  firstName: string;
+  friends: number;
+  interests: string[];
+  isCurrentUser: boolean;
+  lastName: string;
+  location: string;
+  username: string;
+  website: string;
+  createdAt: string;
 };
 
 export type Comment = {
